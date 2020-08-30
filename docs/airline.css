@@ -1,9 +1,12 @@
 body{
-    background-color: whitesmoke;
+    background-image: url('AIRINDIA.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .parent{
     margin: auto;
-    height: 90vh;
+    height: auto;
     width: 30vw;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: rgb(255, 255, 255);
@@ -18,6 +21,7 @@ body{
 }
 input{
     border:0px solid;
+    width: 0px;
     font-size: 1.3rem;
     border-bottom:1.5px solid #C5012D;
     outline: none;
@@ -25,10 +29,18 @@ input{
 label{
     margin-top:2%;
 }
-
+.myform{
+    font-size: 1.4rem;
+}
 @media only screen and (max-width: 1000px) {
     .parent{
-        font-size: 3rem;
         width: 90vw;
+    }
+    .myform{
+        font-size: 400%;
+        height: 100%;
+    }
+    input{
+        font-size: 120%;
     }
   } 
